@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los ladrones de bicicletas</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <header>
+        <h1>Los Ladrones de Bicicletas</h1>
+    </header>
+    <main>
+
+    
+         <form>
+            <fieldset id="Basic Info">
+               <h2>Description of your bike</h2>
+                <label for="day">Dia del robo</label>
+                <input type="date" id="day" name="fecha" required>
+            <div>
+                <label for="time">Approximate time</label>
+                <input type="Time" id="hour" name="hour" required>
+            </div>
+
+            <div>
+                <label for="color">Bike color</label>
+                <input type="color" id="color" name="color" required>
+            </div>
+
+            <div>
+                <label for="range">Price range(50$-600$)</label>
+                <input type="range" id="precio" name="precio" min="50" max="600" required>
+            </div>
+            <br><br>
+
+            <div>
+                <label id="Type">Type of bike</label>
+                <select id="type" name="nombre" required>
+                    <optgroup label="Paseo">
+                        <option value="Senioral">Senioral</option>
+                        <option value="Anti-plebeyos">Anti-plebeyos</option>
+                        <option value="Porencima-del-hombro">PorEncimaDelHombro</option>
+                    </optgroup>
+
+                    <optgroup label="Montaña">
+                        <option value="Gamusinos">Gamusinos</option>
+                        <option value="hueleflores-premium">hueleflores premium</option>
+                        <option value="fango-lover">fango lover</option>
+                    </optgroup>
+
+                    <optgroup label="Carreras">
+                        <option value="Metroymedio">Metroymedio</option>
+                        <option value="3-de-la-tarde-fluorescente-edition">3 de la tarde. Fluorescente edition</option>
+                        <option value="Grupitors">Grupitors</option>
+                    </optgroup>
+                </select>
+
+                <label for="Accesorios">Accesorios:</label>
+                <select id="Accesorios" name="Selector" multiple>
+                    <option value="Ruedines">Ruedines</option>
+                    <option value="Pegatinas">Pegatinas</option>
+                    <option value="Cestitas">Cestitas</option>
+                    <option value="Bomba de aire">Bomba de aire</option>
+                    <option value="Timbre">Timbre</option>
+                    <option value="Foco">Foco</option>
+                </select>
+                  
+            </div>
+            <br><br>
+        
+                <label for="Marca">¿Que marca era?</label>
+                <datalist id="marcas">
+                    <option value="specialized">
+                    <option value="trek">
+                    <option value="merida">
+                    <option value="scott">
+                    <option value="giant">
+                    <option value="cube">
+                    <option value="lapierre">
+                    <option value="orbea">
+                    <option value="cannondale">
+                    <option value="bmc">
+                    <option value="canyon">
+                    <option value="look">
+                    <option value="protek">
+                    <option value="megamo">
+                    <option value="pinarello">
+                    <option value="bianchi">
+                    <option value="bh">
+                    <option value="factor">
+                    <option value="ghost">
+                    <option value="cervelo">
+                    <option value="argon">
+                  </datalist>
+                  <input type="text" id="marca" name="marca" list="marcas"><br><br>         
+            </fieldset>
+
+            <fieldset id="botones">
+                <input type="reset" name="reset" id="reset">
+                <input type="submit" id="enviar">
+            </fieldset>
+
+    </form>
+</main>
+    
+</body>
+</html>
